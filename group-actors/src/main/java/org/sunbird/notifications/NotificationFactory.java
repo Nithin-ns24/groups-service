@@ -4,6 +4,9 @@ import org.sunbird.common.util.NotificationType;
 
 public class NotificationFactory {
 
+private NotificationFactory() {
+}
+
 
     public static INotificationHandler  getNotificationHandler(String operation){
         INotificationHandler notificationHandler = null;

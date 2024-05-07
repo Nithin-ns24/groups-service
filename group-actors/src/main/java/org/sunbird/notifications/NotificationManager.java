@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.Map;
 
 public class NotificationManager {
+    private NotificationManager() {
+    }
+    
     private static LoggerUtil logger = new LoggerUtil(NotificationManager.class);
 
     /**

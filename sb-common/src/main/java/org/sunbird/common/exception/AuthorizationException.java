@@ -5,6 +5,9 @@ import org.sunbird.common.message.ResponseCode;
 
 public class AuthorizationException {
 
+private AuthorizationException() {
+}
+
   public static class NotAuthorized extends BaseException {
     public NotAuthorized(ResponseCode responseCode) {
       super(responseCode.getErrorCode(), responseCode.getErrorMessage(), 401);

@@ -16,6 +16,9 @@ import java.util.Map;
 
 public class TelemetryHandler {
 
+private TelemetryHandler() {
+}
+
     public static void logGroupCreateTelemetry(Request actorMessage, String groupId){
         String source =
                 actorMessage.getContext().get(org.sunbird.common.util.JsonKey.REQUEST_SOURCE) != null

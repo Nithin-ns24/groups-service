@@ -7,6 +7,9 @@ import org.sunbird.common.request.Request;
 
 public class ExceptionHandler {
 
+private ExceptionHandler() {
+}
+
     public static void handleExceptions(Request request, Exception ex, ResponseCode responseCode){
         if(ex instanceof BaseException){
             throw  new BaseException((BaseException) ex);
